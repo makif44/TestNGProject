@@ -50,12 +50,13 @@ public class WindowSwitching {
         //that's why, we need to loop through the set, to read a data from there
         //set can store only unique values
         Set<String> windowHandles = driver.getWindowHandles();
+        System.out.println(windowHandles);
         //loop through the collection of window handles
-        for (String windowHandle : windowHandles) {
+        for (String temsili : windowHandles) {
             //if it's not an old window
-            if (!windowHandle.equals(oldWindow)) {
+            if (!temsili.equals(oldWindow)) {
                 //switch to that window
-                driver.switchTo().window(windowHandle);
+                driver.switchTo().window(temsili);
             }
         }
         //let's verify that title of new window is a Fresh tab

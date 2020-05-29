@@ -35,6 +35,7 @@ public class Dropdowns {
         WebElement dropdown = driver.findElement(By.id("dropdown"));
         //ste 2. Create a select object
         //select class requires webelemnt object as a parameter
+
         Select select = new Select(dropdown);
         //to select any option by visible text:
         // also you can select by value, or index

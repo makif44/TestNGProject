@@ -4,6 +4,8 @@ package tests.day2;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.awt.*;
+
 public class BasicNavigation {
     public static void main(String[] args) {
         //if you have exception: cannot load a class
@@ -28,5 +30,7 @@ public class BasicNavigation {
         //selenium cannot close browser automatically
         //for this, we use method close()
         driver.quit();
+
+        
     }
 }
